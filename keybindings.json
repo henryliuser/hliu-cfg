@@ -1,0 +1,456 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+cmd+a",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack && !filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+shift+cmd+d",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward && !filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-actions.find",
+        "when": "!findWidgetVisible"
+    },
+    {
+        "key": "ctrl+shift+alt+e",
+        "command": "editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "-editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+down",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+up",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "shift+cmd+h",
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+cmd+]",
+        "command": "-workbench.action.terminal.focusNext",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "shift+cmd+[",
+        "command": "-workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "workbench.action.nextEditor",
+        "when": "!terminalFocus || !terminalHasBeenCreated"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+alt+h",
+        "command": "workbench.action.previousEditor",
+        "when": "!terminalFocus || !terminalHasBeenCreated"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "alt+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+p",
+        "command": "workbench.action.toggleEditorWidths",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+\\",
+        "command": "workbench.action.splitEditorToRightGroup"
+    },
+    {
+        "key": "ctrl+shift+cmd+x",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "cmd+f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && isWeb && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+shift+cmd+e",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+right",
+        "command": "-extension.vim_cmd+right",
+        "when": "editorTextFocus && vim.active && vim.use<D-right> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "cmd+left",
+        "command": "extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "cmd+left",
+        "command": "-extension.vim_cmd+left",
+        "when": "editorTextFocus && vim.active && vim.use<D-left> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "cmd+left",
+        "command": "extension.vim_ctrl+home",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "-extension.vim_ctrl+home",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+shift+alt+;",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "org.doDemote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o shift+d",
+        "command": "-org.doDemote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "org.doPromote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o shift+p",
+        "command": "-org.doPromote",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+shift+cmd+a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+d",
+        "command": "explorer.newFolder",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-scrollLineDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly && vim.mode != 'Normal' && vim.mode != 'Insert'"
+    },
+    {
+        "key": "cmd+[",
+        "command": "-editor.action.outdentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "tab",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly && vim.mode != 'Normal' && vim.mode != 'Insert'"
+    },
+    {
+        "key": "cmd+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "org.insertSubheading",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+alt+o s",
+        "command": "-org.insertSubheading",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+shift+cmd+=",
+        "command": "editor.action.fontZoomIn"
+    },
+    {
+        "key": "ctrl+shift+cmd+-",
+        "command": "editor.action.fontZoomOut"
+    },
+    {
+        "key": "alt+h",
+        "command": "org.decrementContext",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "alt+left",
+        "command": "-org.decrementContext",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "alt+l",
+        "command": "org.incrementContext",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "alt+right",
+        "command": "-org.incrementContext",
+        "when": "editorLangId == 'org'"
+    },
+    // {
+    //     "key": "s",
+    //     "command": "leap.find",
+    //     "when": "editorTextFocus && vim.mode != 'Insert'"
+    // },
+    {
+        "key": "ctrl+alt+f",
+        "command": "-leap.find"
+    },
+    {
+        "key": "ctrl+cmd+j",
+        "command": "scrollViewport.scrollDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-scrollViewport.scrollDown",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+cmd+k",
+        "command": "scrollViewport.scrollUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-scrollViewport.scrollUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "extension.smoothscroll_scrollUp",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+pageup",
+        "command": "-extension.smoothscroll_scrollUp",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "extension.smoothscroll_scrollDown",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "alt+pagedown",
+        "command": "-extension.smoothscroll_scrollDown",
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "extension.smoothscroll_scrollDown",
+                "extension.vim_ctrl+d"
+            ]
+        },
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "extension.smoothscroll_scrollUp",
+                "extension.vim_ctrl+u"
+            ]
+        },
+        "when": "editorTextFocus && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+shift+cmd+o",
+        "command": "org.timestamp",
+        "when": "editorLangId == 'org'"
+    },
+    {
+        "key": "ctrl+shift+alt+p",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+c",
+        "command": "-leap.match-case"
+    },
+    {
+        "key": "s",
+        "command": "leap.find-backwards",
+        "when": "editorTextFocus && vim.mode != 'Insert'"
+    },
+    {
+        "key": "ctrl+shift+alt+/",
+        "command": "workbench.action.splitEditorToLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+cmd+z",
+        "command": "editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "-editor.action.rename",
+        "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+y", // Replace with your preferred shortcut
+        "command": "extension.multiCommand.execute",
+        "args": { "command": "multiCommand.fixvim" },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !jupyter.ownsSelection && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+shift+cmd+r",
+        "command": "revealFileInOS",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "alt+cmd+r",
+        "command": "-revealFileInOS",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+enter",
+        "command": "search.action.focusSearchList"
+    },
+    {
+        "key": "ctrl+shift+cmd+.",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "alt+z",
+        "command": "-editor.action.toggleWordWrap"
+    },
+    {
+        "key": "alt+z",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "cmd+k z",
+        "command": "-workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    }
+]

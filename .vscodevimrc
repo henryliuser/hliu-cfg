@@ -1,0 +1,65 @@
+nnoremap <C-Home> ^
+nnoremap <C-b> $
+nnoremap <C-d> L
+nnoremap <C-u> H
+nnoremap <C-e> 2<C-e>
+nnoremap <C-y> 2<C-y>
+
+nnoremap z dw<esc>
+nnoremap Z dW<esc>
+nnoremap n x
+nnoremap p p`[v`]k$
+nnoremap P P`[v`]k$
+nnoremap D dd
+
+nnoremap H g^
+nnoremap L g$
+vnoremap H g^
+vnoremap L g$h
+
+" change in square bracket
+nnoremap cin ci[
+
+" custom 'til combos with `q` instead
+nnoremap qb F_
+vnoremap qb F_
+nnoremap qw f_
+vnoremap qw f_
+nnoremap ql t)
+vnoremap ql t)
+nnoremap qh T(
+vnoremap qh T(
+nnoremap qjl t]
+vnoremap qjl t]
+nnoremap qjh T[
+vnoremap qjh T[
+nnoremap qc t,
+vnoremap qc t,
+nnoremap cqc ct,
+nnoremap dqc df,x
+
+" intuitive nav for line-wrap mode
+nnoremap gj j
+nnoremap gk k
+nnoremap j gj
+nnoremap k gk
+vnoremap gj j
+vnoremap gk k
+vnoremap j gj
+vnoremap k gk
+
+" for surround plugin
+vnoremap ( S)F(i
+vnoremap ) S(F(i
+vnoremap [ S]F(i
+vnoremap ] S[F(i
+vnoremap { S}F(i
+vnoremap } S{F(i
+vnoremap " S"
+vnoremap ' S'
+vnoremap ` S`
+
+" custom movement in visual mode
+vnoremap w e
+vnoremap el t)h 
+vnoremap eh T(

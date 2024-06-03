@@ -1,0 +1,110 @@
+{
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#2D5697",
+        "tab.unfocusedActiveBackground": "#43464D",
+        "terminal.tab.activeBorder": "#41A6D9",
+        "editorUnnecessaryCode.opacity": "#ffffff",
+        "editorUnnecessaryCode.border": "#00CED1"
+    },
+    "editor.fontSize": 14,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "security.workspace.trust.untrustedFiles": "open",
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "debug.console.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["s"],
+            "commands": ["leap.find-forwards"]
+        },
+        {
+            "before": ["S"],
+            "commands": ["leap.find-backwards"]
+        }
+    ],
+    "editor.inlayHints.enabled": "off",
+    "errorLens.delay": 1000,
+    "editor.accessibilitySupport": "off",
+    "errorLens.messageEnabled": true,
+    "files.autoSave": "afterDelay",
+    "godot_tools.gdscript_lsp_server_port": 6005,
+    "editor.minimap.enabled": false,
+    "vim.foldfix": true,
+    "vim.vimrc.enable": true,
+    "zenMode.fullScreen": false,
+    "zenMode.restore": false,
+    "maven.executable.path": "/opt/homebrew/bin/mvn",
+    "errorLens.enabled": true,
+    "terminal.integrated.fontFamily": "'Hack', monaco",
+    "window.confirmBeforeClose": "always",
+    "vim.cursorStylePerMode.normal": "block",
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    // "editor.tokenColorCustomizations": {
+    //     "textMateRules": [
+    //         {
+    //             "scope": "unused",
+    //             "settings": {
+    //                 "foreground": "#ff0000",
+    //                 "fontStyle": "italic"
+    //             }
+    //         }
+    //     ]
+    // },
+    "extension.smoothscroll.totalDelay": 82,
+    "extension.smoothscroll.linesToScroll": 15,
+    "vscode_custom_css.imports": [
+        "file:///Users/drymerge/.vscode/custom.css"
+    ],
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "white",
+            "backgroundColor": "dodgerblue",
+            "borderRadius": "5px",
+        },
+        {
+            "text": "NOTE:",
+            "color": "white",
+            "backgroundColor": "orchid",
+            "borderRadius": "5px",
+        },
+        {
+            "text": "BUG:",
+            "color": "white",
+            "backgroundColor": "#ff0031",
+            "borderRadius": "5px",
+        }
+
+    ],
+    "todohighlight.isEnable": true,
+    "hopper.selectWord": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.fixvim",
+            "sequence": [
+                "toggleVim",
+                "toggleVim"
+            ]
+        }
+    ],
+    "window.zoomLevel": -1,
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+    "godotTools.lsp.serverPort": 6005,
+    "workbench.colorTheme": "Godot/Discord Hybrid Theme",
+    "zenMode.hideLineNumbers": false,
+    "accessibility.signals.lineHasFoldedArea": {
+        "sound": "off"
+    },
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.enhancedColorization": "disabled",
+    "C_Cpp.hover": "disabled",
+    "ocaml.sandbox": {
+        "kind": "opam",
+        "switch": "simple"
+    },
+}
